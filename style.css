@@ -2,36 +2,43 @@
     --clr-yellow: hsl(47, 88%, 63%);
     --clr-black: hsl(0, 0%, 0%);
     --clr-white: hsl(50, 100%, 100%);
+    --clr-menuhover: hsl(0, 0%, 50%);
+    --clr-menu: hsl(0, 0%, 20%);
 }
 
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    background-color: var(--clr-yellow);
+    max-width: 1440px;
+
 }
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+header {
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+main {
+    min-height: 800px;
 }
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.navbar {
+    display: flex;
+    background-color: var(--clr-menu);
+    margin: 0px;
 }
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+}
+
+.navbar div:hover{
+    background-color: var(--clr-menuhover);
 }
