@@ -4,5 +4,8 @@
 }
 
 *body {
-    display: flex;
+    display: inline;
+    inline-size: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
