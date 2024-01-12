@@ -10,6 +10,7 @@ body {
     margin: 0px;
 }
 
+/* top section */
 header {
     display: flex;
     color: #fff;
@@ -24,7 +25,6 @@ header img{
 }
 
 header nav{
-    display: flex;
     margin-left: 5px;
     margin-right: 5px;
 
@@ -36,11 +36,19 @@ header a {
     background-color: yellow;
 }
 
+/* middle section */
 main {
     display: flex;
     color: #fff;
 }
 
-main content {
+main .content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
 
+main .content article {
+    padding: 10px;
+    margin-bottom: 10px;
 }
