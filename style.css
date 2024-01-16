@@ -1,12 +1,130 @@
-:root {
-    --clr-yellow: hsl(47, 88%, 63%);
-    --clr-black: hsl(0, 0%, 0%);
-    --clr-white: hsl(50, 100%, 100%);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+/*     border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
 }
 
-*body {
-    display: inline;
-    inline-size: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    max-width: 1280px;
+/*     align-content: center; */
+    margin:auto;
 }
 
+body header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 75px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight:900;
+    font-size: larger;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+header nav a:hover {
+    color: red;
+}
+
+.logo {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h2 {
+    color: black;
+}
+
+.logo span {
+    color: red;
+}
+
+.banner {
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel h1 {
+    margin-bottom: 8px;
+}
+
+.carousel p {
+    text-overflow: ellipsis;
+    text-align: justify;
+    overflow: hidden;
+}
+
+main {
+    margin-top: 75px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
+main .content {
+max-width: 680px;
+max-height: 360px;
+display: grid;
+grid-gap: 15px;
+}
+
+main .content article p {
+    max-height: 75px;
+    overflow: hidden;
+}
+
+main aside {
+    height: 360px;
+    margin-left: 15px;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+main aside img {
+    width: 100%;
+    min-width: 250px;
+    height: auto;
+    object-fit: cover;
+}
